@@ -268,3 +268,443 @@ company.employees[3]={
         salary:60000
         }
 console.log(company.employees[3]);
+
+
+
+
+
+
+function greet(){
+    console.log( "Hello World");
+    alert( "Hello World");
+    
+}
+greet();
+
+function greeting(name){
+
+    console.log("Hello " + name);
+    alert("Hello " + name);
+
+}
+
+greeting("Momina");
+
+function addition(a,b){
+      console.log(a+b);
+      
+}
+
+addition(3,9);
+
+function bigger(a,b){
+      
+    if(a > b){
+     return a;
+    }else{
+        console.log(b);
+          return b;
+    }
+     
+}
+
+
+console.log(bigger(10,12)); 
+
+
+function number(a){
+      
+    if(a % 2){
+     return "even";
+    }else{
+          return  "odd";
+    }
+     
+}
+
+console.log(number(13,2)); 
+
+function square(a) {
+
+    return a * a;
+
+}
+
+console.log(square(13));
+
+
+function vote(a){
+      
+  
+    if(a  >= 18 ){
+     return "You can vote ";
+    }else{
+          return  "You can not vote";
+    }
+     
+}
+
+let age1 = prompt("Enter your age");
+
+console.log(vote(age1));
+
+
+
+function length(a){
+
+    console.log(a.length);
+
+}
+
+console.log(length("momina"));
+
+function fahrenheit(c) {
+
+    return  (c * 9/5) + 32;
+
+}
+
+console.log(fahrenheit(25));
+
+function number1(a){
+      
+    if(a >0 ){
+     return "true";
+    }else{
+          return  "false";
+    }
+     
+}
+
+console.log(number1(13)); 
+
+
+function printnumber(){
+
+    for(let i=1; i <=10; i++){
+        console.log(i);
+        
+    }
+}
+
+ printnumber();
+
+ function printnumber(n){
+
+    for(let i=1; i <=n; i++){
+        console.log(i);
+        
+    }
+}
+
+ printnumber(20);
+
+ 
+ function printnumber(n){
+
+
+    let i=n;
+    while( i >=1) {
+        console.log(i);
+        i--;
+    }
+}
+
+ printnumber(20);
+
+
+ function subject(math,english,urdu){
+
+    total= math + english +urdu;
+    console.log(total);
+    
+}
+
+subject(75,85,90);
+
+
+
+function greet(){
+
+    console.log("Hello world");
+
+}
+
+greet()
+
+
+
+function greeting(name){
+
+    console.log("Hello" + " " + name);
+    
+}
+
+greeting("Momina");
+
+function age(a){
+
+    if(a >= 18){
+        console.log("an adult");
+        
+    }else{
+        console.log("not an adult");
+        
+    }
+}
+
+age(10);
+
+function addition(a,b){
+
+    console.log( a+b);
+}
+addition(20,20);
+
+
+function bigger(a,b){
+
+    if( a > b){
+
+       console.log(a);
+       
+        
+    }else{
+             
+       console.log(b);
+       
+    }
+    
+}
+bigger(20,40);
+
+function addition(a){
+
+
+    return a;
+   ;
+
+}
+// addition(20);
+   console.log(nums(10));
+
+
+   let num = prompt( "Enter any number");
+   console.log(num.parseInt);
+   console.log(typeof(num));
+   
+
+   let name = prompt("Enter your name");
+   console.log(name);
+   
+
+let numbeer =Math.Squ(64 ) ;
+console.log(numbeer);
+
+
+   let fixed =  num.toFixed(3);
+   console.log(typeof(fixed));
+   let numbere = Number(fixed);
+   console.log(typeof(numbere));
+
+let useres = Number.parseInt(2);
+console.log(useres);
+
+let numbe = "12.45";
+console.log(maths.ceil);
+
+
+function percentage(){
+
+    let obtained = prompt("Enter your obtained marks");
+    let total = 500;
+    let percentage = (obtained/total)*100;
+    return percentage;
+
+}
+
+console.log(percentage());
+
+
+function basefare(){
+
+     let Base_fare =100;
+     let kilometer = Number(prompt("how many kilometers"));
+     let TotalFare = Base_fare + ( kilometer * 50);
+
+     return   TotalFare;
+
+}
+console.log( basefare());
+
+function calculateBill(units) {
+
+    let bill;
+
+    if (units <= 100) {
+
+        bill = units * 10;
+
+    } else if (units <= 200) {
+
+        bill = (100 * 10) + ((units - 100) * 15);
+
+    } else {
+
+        bill = (100 * 10) + (100 * 15) + ((units - 200) * 20);
+    }
+
+    return bill;
+}
+
+console.log(calculateBill(250));
+
+
+function Marks(grades){
+
+  
+
+    if( grades >= 85){
+
+        console.log("A grade");
+        
+    }else if(  grades >= 75){
+        console.log("B grade");
+    }
+    
+    else if( grades >= 65){
+
+        console.log("C grade");
+
+}else if( grades >= 50){
+
+        console.log("D grade");
+}else{
+     console.log("F grade");
+}
+
+}
+
+let marks = prompt("Enter your marks");
+Marks(marks);
+
+
+function check(password){
+
+    if(password.length >= 8){
+        return "Strong Password";
+        
+    }else{
+       return "Weak Password";
+        
+    }
+}
+
+let password = prompt("Enter your password");
+
+console.log(check(password));
+
+
+
+function discount(amount, membership, item) {
+
+    let count = 0;
+    let discount = 0;
+    let vipDiscount = 0;
+    let itemDiscount = 0;
+
+    for (let i = 1; i <= item; i++) {
+        count++;
+    }
+
+    if (count > 10) {
+        itemDiscount = 3;
+    }
+
+    if (amount >= 50000) {
+        discount = 20;
+    }
+    else if (amount >= 20000) {
+        discount = 10;
+    }
+    else {
+        discount = 0;
+    }
+
+    if (membership === "VIP") {
+        vipDiscount = 5;
+    }
+
+
+let totalDiscount = discount + vipDiscount + itemDiscount;
+
+let discountAmount = (amount * totalDiscount) / 100;
+
+let finalAmount = amount - discountAmount;
+
+return finalAmount;
+}
+
+console.log(discount(40000, "VIP", 12));
+
+
+evaluatemarks = (marks) => {
+
+   if(marks <0 || marks >100 ){
+
+    return "Invalid Marks";
+    
+   }
+
+    else if(marks >= 85 ){
+
+    return "Excellent";
+
+   }else if(marks >= 70){
+
+     return "Good";
+
+   }else if(marks >= 50){
+
+      return "Needs Improvement";
+
+   }else{
+      return "Fail";
+    
+   }
+
+}
+
+function displayresult(){
+
+    let marks = prompt("Enter your marks");
+    console.log(evaluatemarks(marks));
+}
+
+displayresult();
+
+ function analyzePrice(price) {
+
+    if(price<1000){
+
+         return "Budget Product";
+
+    }else if(price >=1000 && price <=5000){
+
+       return "Regular Product";
+
+    }else if(price > 5000){
+
+        return "Premium Product"
+
+    }
+
+ }
+showresult =(price)=>{
+    
+    console.log(analyzePrice(price));
+    
+
+  }
+
+  showresult(3500);
